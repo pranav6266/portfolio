@@ -38,7 +38,7 @@ export const experience: Experience[] = [
     points: [
       "Temple billing and receipt software in daily production use, with thermal printing and 10,000+ records.",
       "A pooja scheduling engine that computes lunar-calendar dates astronomically, shipped as an offline Windows app.",
-      "A CRM for a solar installer and a website for a film dubbing studio.",
+      "A website for a film dubbing studio, and a CRM for a solar installer (in progress).",
     ],
   },
   {
@@ -72,7 +72,7 @@ export const hackathons: Milestone[] = [
   {
     date: "2024",
     event: "Innovative Projects using Raspberry Pi (IPR)",
-    result: "1st place out of 500+ teams",
+    result: "1st place out of 506 teams",
     project: "sign-language-to-speech",
     highlight: true,
   },
@@ -80,7 +80,7 @@ export const hackathons: Milestone[] = [
   { date: "Mar 2026", event: "SheLeads 2.0, LeadHer track", result: "Built NariConnect AI", project: "nariconnect" },
   { date: "Mar 2026", event: "BWT Hackathon, Future Finance track", result: "Built FinGuard AI", project: "finguard-ai" },
   { date: "Apr 2026", event: "Datathon at Innovatex 4.0, Presidency University", result: "2nd place", highlight: true },
-  { date: "2026", event: "Hackathon", result: "Built MarisAI", project: "marisai" },
+  { date: "2026", event: "Smart India Hackathon (SIH), internal round", result: "Built MarisAI", project: "marisai" },
 ];
 
 export type Certification = {
