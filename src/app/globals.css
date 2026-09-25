@@ -1,26 +1,74 @@
 @import "tailwindcss";
 
+/* Design tokens. Light is the default; dark follows the system setting. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --ink: #0b1020;
+  --muted: #5b647a;
+  --faint: #8a93a8;
+  --line: #e3e6ec;
+  --teal: #0b7a6e;
+  --indigo: #4f46e5;
+  --edge: #c9ced9;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #0a0f1e;
+    --surface: #111830;
+    --ink: #e8ecf7;
+    --muted: #9aa4bf;
+    --faint: #6b7592;
+    --line: #1e2742;
+    --teal: #2dd4bf;
+    --indigo: #818cf8;
+    --edge: #2a3453;
+    color-scheme: dark;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-teal: var(--teal);
+  --color-indigo: var(--indigo);
+  --color-edge: var(--edge);
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
