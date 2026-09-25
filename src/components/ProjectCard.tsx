@@ -20,7 +20,7 @@ export function ProjectCard({ project }: { project: Project }) {
           />
         ) : (
           <div className="flex h-full flex-col justify-between p-5">
-            <p className="pr-28 font-mono text-[11px] uppercase leading-5 tracking-[0.16em] text-faint">{project.context}</p>
+            <p className="pr-28 font-mono text-[11px] uppercase leading-5 tracking-[0.16em] text-muted">{project.context}</p>
             <p className="font-display text-xl font-semibold leading-snug text-ink/80">{project.stack.slice(0, 3).join(" · ")}</p>
           </div>
         )}

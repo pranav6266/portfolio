@@ -166,7 +166,7 @@ export function SkillGraph() {
         </p>
       </div>
 
-      <figcaption className="mt-3 hidden font-mono text-xs text-faint md:block">
+      <figcaption className="mt-3 hidden font-mono text-xs text-muted md:block">
         Hover a project or skill to trace the connections. Click a project to read about it.
       </figcaption>
     </figure>
